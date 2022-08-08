@@ -8,9 +8,13 @@ import {
   Routes,
   Route
 } from "react-router-dom";
+// import { Auth0Provider } from '@auth0/auth0-react';
+import Profile from './Profile';
+
 
 class App extends React.Component {
   render() {
+    // const { isAuthenticated } = this.props.auth0;
     return (
       <>
         <Router>
