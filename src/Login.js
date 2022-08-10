@@ -7,8 +7,12 @@ function LoginButton() {
     loginWithRedirect,
   } = useAuth0();
 
+  function handleLogin() {
+    loginWithRedirect();
+  }
+
   return !isAuthenticated && (
-    <button onClick={loginWithRedirect}>Log in</button>
+    <button onClick={handleLogin}>Log in</button>
   );
 }
 
